@@ -53,7 +53,7 @@ const (
 	portName1      = "http"
 	portName2      = "dns"
 	protocol1      = v1.ProtocolTCP
-	portNumber1    = int32(8080)
+	portNumber1    = int32(80)
 	protocol2      = v1.ProtocolUDP
 	portNumber2    = int32(53)
 	hostName1      = "hostName1"
