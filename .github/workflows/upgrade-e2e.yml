@@ -4,6 +4,8 @@ name: Upgrade
 on:
   pull_request:
 
+permissions: {}
+
 jobs:
   upgrade-e2e:
     name: Latest Release to Latest Version
