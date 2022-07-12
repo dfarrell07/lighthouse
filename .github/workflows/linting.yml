@@ -8,6 +8,7 @@ jobs:
   apply-suggestions-commits:
     name: 'No "Apply suggestions from code review" Commits'
     runs-on: ubuntu-latest
+    permissions: {}
     steps:
       - name: Get PR commits
         id: 'get-pr-commits'
