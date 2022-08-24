@@ -21,8 +21,8 @@ on:
 
 permissions:
   issues: write
-  pull-requests: read
-  statuses: write
+  pull-requests: write
+  statuses: read
 
 jobs:
   check:
