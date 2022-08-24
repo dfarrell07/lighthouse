@@ -10,6 +10,8 @@ jobs:
   apply-suggestions-commits:
     name: 'No "Apply suggestions from code review" Commits'
     runs-on: ubuntu-latest
+    permissions:
+      actions: none
     steps:
       - name: Get PR commits
         id: 'get-pr-commits'
@@ -36,6 +38,8 @@ jobs:
   gitlint:
     name: Commit Message(s)
     runs-on: ubuntu-latest
+    permissions:
+      actions: none
     steps:
       - name: Check out the repository
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
@@ -47,6 +51,8 @@ jobs:
   golangci-lint:
     name: Go
     runs-on: ubuntu-latest
+    permissions:
+      actions: none
     steps:
       - name: Check out the repository
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
@@ -56,6 +62,8 @@ jobs:
   headers:
     name: License Headers
     runs-on: ubuntu-latest
+    permissions:
+      actions: none
     steps:
       - name: Check out the repository
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
@@ -66,6 +74,8 @@ jobs:
   licenses:
     name: Dependency Licenses
     runs-on: ubuntu-latest
+    permissions:
+      actions: none
     steps:
       - name: Check out the repository
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
@@ -76,6 +86,8 @@ jobs:
   markdown-link-check:
     name: Markdown Links (modified files)
     runs-on: ubuntu-latest
+    permissions:
+      actions: none
     steps:
       - name: Check out the repository
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
@@ -90,6 +102,8 @@ jobs:
   markdownlint:
     name: Markdown
     runs-on: ubuntu-latest
+    permissions:
+      actions: none
     steps:
       - name: Check out the repository
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
@@ -99,6 +113,8 @@ jobs:
   packagedoc-lint:
     name: Package Documentation
     runs-on: ubuntu-latest
+    permissions:
+      actions: none
     steps:
       - name: Check out the repository
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
@@ -108,6 +124,7 @@ jobs:
   vulnerability-scan:
     name: Vulnerability Scanning
     runs-on: ubuntu-latest
+    permissions: {}
     steps:
       - name: Check out the repository
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
@@ -130,6 +147,7 @@ jobs:
   yaml-lint:
     name: YAML
     runs-on: ubuntu-latest
+    permissions: {}
     steps:
       - name: Check out the repository
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
