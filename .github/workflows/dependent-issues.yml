@@ -27,7 +27,6 @@ permissions:
 jobs:
   check:
     name: Check Dependencies
-    if: github.repository_owner == 'submariner-io'
     runs-on: ubuntu-latest
     steps:
       - uses: z0al/dependent-issues@0fae07162bc9e0d8e116a133bd03686eed6efa21
