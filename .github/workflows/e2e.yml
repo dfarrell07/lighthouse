@@ -54,7 +54,7 @@ jobs:
           # https://submariner.io/development/building-testing/ci-maintenance/
           - k8s_version: '1.21'
           # Bottom of supported K8s version range
-          - k8s_version: '1.26'
+          - k8s_version: '1.29'
     steps:
       - name: Check out the repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
