@@ -30,7 +30,7 @@ spec:
   - name: dockerfile
     value: package/Dockerfile.lighthouse-agent
   - name: build-args-file
-    value: .tekton/lighthouse-agent-devel.args
+    value: .tekton/devel.args
   pipelineSpec:
     description: |
       This pipeline is ideal for building multi-arch container images from a Containerfile while maintaining trust after pipeline customization.
