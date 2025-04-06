@@ -98,7 +98,7 @@ require (
 	github.com/quic-go/quic-go v0.48.2 // indirect
 	github.com/rs/zerolog v1.33.0 // indirect
 	github.com/ryanuber/go-glob v1.0.0 // indirect
-	github.com/secure-systems-lab/go-securesystemslib v0.7.0 // indirect
+	github.com/secure-systems-lab/go-securesystemslib v0.9.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/tinylib/msgp v1.2.1 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
