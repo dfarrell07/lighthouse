@@ -99,7 +99,7 @@ require (
 	github.com/rs/zerolog v1.33.0 // indirect
 	github.com/ryanuber/go-glob v1.0.0 // indirect
 	github.com/secure-systems-lab/go-securesystemslib v0.7.0 // indirect
-	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/pflag v1.0.6 // indirect
 	github.com/tinylib/msgp v1.2.1 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	go.etcd.io/etcd/api/v3 v3.5.17 // indirect
