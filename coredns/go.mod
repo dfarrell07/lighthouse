@@ -94,7 +94,7 @@ require (
 	github.com/philhofer/fwd v1.1.3-0.20240612014219-fbbf4953d986 // indirect
 	github.com/prometheus/client_model v0.6.1 // indirect
 	github.com/prometheus/common v0.62.0 // indirect
-	github.com/prometheus/procfs v0.15.1 // indirect
+	github.com/prometheus/procfs v0.16.1 // indirect
 	github.com/quic-go/quic-go v0.48.2 // indirect
 	github.com/rs/zerolog v1.33.0 // indirect
 	github.com/ryanuber/go-glob v1.0.0 // indirect
