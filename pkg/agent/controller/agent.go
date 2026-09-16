@@ -51,9 +51,9 @@ import (
 )
 
 type AgentConfig struct {
+	IPPool                   *ipam.IPPool
 	ServiceImportCounterName string
 	ServiceExportCounterName string
-	IPPool                   *ipam.IPPool
 }
 
 var logger = log.Logger{Logger: logf.Log.WithName("agent")}

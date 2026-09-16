@@ -42,14 +42,14 @@ type ClusterStatus interface {
 
 type DNSRecord struct {
 	IP          string
-	Ports       []mcsv1a1.ServicePort
 	HostName    string
 	ClusterName string
+	Ports       []mcsv1a1.ServicePort
 }
 
 type clusterInfo struct {
-	endpointRecords       []DNSRecord
 	endpointRecordsByHost map[string][]DNSRecord
+	endpointRecords       []DNSRecord
 	weight                int64
 	endpointsHealthy      bool
 }
@@ -62,9 +62,9 @@ type IPFamilyInfo struct {
 }
 
 type serviceInfo struct {
+	spec         mcsv1a1.ServiceImportSpec
 	ipv4Info     IPFamilyInfo
 	ipv6Info     IPFamilyInfo
 	isExported   bool
 	isClusterset bool
-	spec         mcsv1a1.ServiceImportSpec
 }

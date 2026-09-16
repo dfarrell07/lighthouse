@@ -135,20 +135,20 @@ type cluster struct {
 }
 
 type testDriver struct {
-	cluster1                        cluster
-	cluster2                        cluster
 	brokerServiceImportClient       dynamic.NamespaceableResourceInterface
 	brokerEndpointSliceClient       dynamic.ResourceInterface
+	syncerConfig                    *broker.SyncerConfig
 	brokerEndpointSliceReactor      *fake.FailingReactor
 	stopCh                          chan struct{}
-	syncerConfig                    *broker.SyncerConfig
-	doStart                         bool
-	useClusterSetIP                 bool
 	ipPool                          *ipam.IPPool
 	brokerServiceImportReactor      *fake.FailingReactor
-	aggregatedServicePorts          []mcsv1a1.ServicePort
-	aggregatedSessionAffinity       corev1.ServiceAffinity
 	aggregatedSessionAffinityConfig *corev1.SessionAffinityConfig
+	aggregatedSessionAffinity       corev1.ServiceAffinity
+	cluster2                        cluster
+	cluster1                        cluster
+	aggregatedServicePorts          []mcsv1a1.ServicePort
+	doStart                         bool
+	useClusterSetIP                 bool
 }
 
 func newTestDiver() *testDriver {

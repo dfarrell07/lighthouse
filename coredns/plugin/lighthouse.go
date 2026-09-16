@@ -44,12 +44,12 @@ var logger = log.Logger{Logger: logf.Log.WithName("Handler")}
 
 type Lighthouse struct {
 	Next                plugin.Handler
-	Fall                fall.F
-	Zones               []string
-	TTL                 uint32
 	ClusterStatus       resolver.ClusterStatus
 	Resolver            *resolver.Interface
+	Fall                fall.F
+	Zones               []string
 	SupportedIPFamilies []k8snet.IPFamily
+	TTL                 uint32
 }
 
 var _ plugin.Handler = &Lighthouse{}

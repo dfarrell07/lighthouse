@@ -27,9 +27,9 @@ import (
 )
 
 type ClusterStatus struct {
-	mutex               sync.Mutex
-	connectedClusterIDs map[k8snet.IPFamily]set.Set[string]
 	localClusterID      atomic.Value
+	connectedClusterIDs map[k8snet.IPFamily]set.Set[string]
+	mutex               sync.Mutex
 }
 
 func NewClusterStatus(localClusterID string, isConnected ...string) *ClusterStatus {

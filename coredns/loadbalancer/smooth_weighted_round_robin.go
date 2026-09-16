@@ -37,8 +37,8 @@ type weightedItem struct {
 
 // Smooth Weighted Round Robin load balancer implementation.
 type smoothWeightedRR struct {
-	items   []*weightedItem
 	itemMap map[interface{}]*weightedItem
+	items   []*weightedItem
 }
 
 // NewSmoothWeightedRR returns a Smooth Weighted Round Robin load balancer.
